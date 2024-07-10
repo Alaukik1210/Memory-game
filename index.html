@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Memory Game</title>
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+          theme: {
+              extend: {
+                  dropShadow: {
+                      'sd': '0 35px 35px rgba(0, 0, 0, 0.25)',
+                      'sdd': [
+                          '0 35px 35px rgba(0, 0, 0, 0.25)',
+                          '0 45px 65px rgba(0, 0, 0, 0.15)',
+                  ]},
+                 
+                  colors: {
+                     text:'#fc354c',
+                     theme: '#slate-950',
+                     dash: '#cc0a49',
+                      clifford: '#da373d',
+                  }
+              }
+          }
+      }
+  </script>
+  </head>
+  <body class="bg-slate-950 flex justify-center mt-40">
+    <div class=" box-content w-26 p-4 bg-slate-800 rounded-lg shadow-[0_35px_60px_-15px_rgba(0,0,0,0.3)]">
+      <div class="stats-container  ">
+        <div id="moves-count"></div>
+        <div id="time"></div>
+      </div>
+      <div class="game-container relative"></div>
+      <button id="stop" class="hide p-4">Stop Game</button>
+    </div>
+    <div class="controls-container ">
+      <p id="result"></p>
+      <button class="bg-white  p-4" id="start">Start Game</button>
+    </div>
+    <!-- Script -->
+    <script src="script.js"></script>
+  </body>
+</html>
