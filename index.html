@@ -21,11 +21,12 @@
                           '0 35px 35px rgba(0, 0, 0, 0.25)',
                           '0 45px 65px rgba(0, 0, 0, 0.15)',
                   ]},
-                 
+
                   colors: {
                      text:'#fc354c',
-                     theme: '#slate-950',
-                     dash: '#cc0a49',
+                     theme: '#0b2f41',
+                     dash: '#2bc2e5',
+
                       clifford: '#da373d',
                   }
               }
@@ -33,18 +34,18 @@
       }
   </script>
   </head>
-  <body class="bg-slate-950 flex justify-center mt-40">
-    <div class=" box-content w-26 p-4 bg-slate-800 rounded-lg shadow-[0_35px_60px_-15px_rgba(0,0,0,0.3)]">
+  <body class="bg-gradient-to-tl from-cyan-600  via-slate-900 to-slate-950 bg-fu flex justify-center items-center  h-screen ">
+    <div class=" box-content w-80 sm:w-fit  backdrop-blur-md   p-4  rounded-lg bg-gradient-to-tl from-slate-950 via-slate-900 to-cyan-600  shadow-[0_35px_60px_-15px_rgba(0,0,0,0.3)]">
       <div class="stats-container  ">
-        <div id="moves-count"></div>
-        <div id="time"></div>
+        <div id="moves-count" class="pl-5 pt-2 text-lg text-left font-semi-bold"></div>
+        <div id="time" class="pl-5 pt-2 pb-2 text-lg text-left font-semibold" ></div>
       </div>
-      <div class="game-container relative"></div>
-      <button id="stop" class="hide p-4">Stop Game</button>
+      <div class="game-container  relative"></div>
+      <button id="stop" class="hide bg-[#a9ebf8] text-black p-4">Stop Game</button>
     </div>
-    <div class="controls-container ">
+    <div class="controls-container  backdrop-blur-xl">
       <p id="result"></p>
-      <button class="bg-white  p-4" id="start">Start Game</button>
+      <button class="bg-[#a9ebf8]  p-4" id="start">Start Game</button>
     </div>
     <!-- Script -->
     <script src="script.js"></script>
