@@ -1,4 +1,8 @@
+  html {
+    width: 100vw;
+    height: 100vh;
 
+  
 
   .game-container {
     position: relative;
@@ -6,7 +10,7 @@
     display: grid;
     gap: 0.6em;
   }
-            
+
   .card-container {
     position: relative;
     width: 6.25em;
