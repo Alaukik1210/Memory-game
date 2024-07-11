@@ -6,7 +6,7 @@
     display: grid;
     gap: 0.6em;
   }
-   
+            
   .card-container {
     position: relative;
     width: 6.25em;
@@ -22,16 +22,21 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 4px solid #000000;
+    /* border: 4px solid #000000; */
     transition: transform 0.7s ease-out;
     backface-visibility: hidden;
   }
   .card-before {
-    background-color: #708090;
+    /* background-color: #708090; */
+      background-color: #a9ebf8;
+      box-shadow: 0.2rem 0.2rem 0.3rem rgb(1, 52, 69);
     font-size: 2.8em;
     font-weight: 600;
   }
-  .card-after {
+.card-before:hover {
+  transform: scale(1.05)
+}
+.card-after {
     background-color: #ffffff;
     transform: rotateY(180deg);
   }
@@ -42,7 +47,6 @@
     transform: rotateY(0deg);
   }
 
-  
 .controls-container {
   position: absolute;
   display: flex;
@@ -51,7 +55,6 @@
   flex-direction: column;
   width: 100%;
   height: 100%;
-  background-color: #c3d141;
   top: 0;
 }
 
@@ -60,14 +63,12 @@
     border-radius: 0.3em;
     padding: 1em 1.5em;
     cursor: pointer;
-    background-color: rgb(229, 255, 113);
   }
   #stop {
     font-size: 1.1em;
     display: block;
     margin: 1.1em auto 0 auto;
-    background-color: #000000;
-    color: #ffffff;
+
   }
   .controls-container button {
     font-size: 1.3em;
